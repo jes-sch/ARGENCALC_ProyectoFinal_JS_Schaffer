@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to left bottom, #50ee1c, #dec000, #ff7d0e, #ff3181, #f349db);
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #33ef37;
+    text-shadow: 4px 3px 3px white;
+    font-size: 50px;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+span{
+    color: #33ef37;
+    text-shadow: 3px 3px 3px white;
+}
+
+.form-label{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px grey;
+    font-size: 20px;
+}
+
+.form-control{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #33ef37;
+}
+
+#btnCalcular{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #33ef37;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+}
+
+#btnRecuperarUltimo{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #33ef37;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+}
+
+.title_2{
+    color: white;
+    text-shadow: 3px 3px 3px grey;
+}
+
+#resultadosCuotasContenedor{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+
+#exampleModal{
+    opacity: 0.9;
+}
+
+#ResultadosFinales1{
+    color: #FF2FEF;
+    text-decoration: underline solid 2px;
+    text-transform: uppercase;
+}
+
+#ResultadosFinales6{
+    margin-top: 20px;
+    color: #FF2FEF;
+    text-decoration: underline solid 2px;
+    text-transform: uppercase;
+}
+
+.btn-secondary{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #33ef37;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+}
+
+.modal-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #33ef37;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.modal-body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #1124f2;
+    font-style: oblique;
+}
+
+img{
+    margin: 20px;
+    border-radius: 20px;
+    height: 70vh;
+}
+
+footer{
+margin: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
