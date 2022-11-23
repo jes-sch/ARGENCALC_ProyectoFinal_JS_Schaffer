@@ -66,7 +66,7 @@ span{
     border: none;
 }
 
-#btnRecuperarUltimo{
+#boton_reset{
     margin-top: 20px;
     margin-left: 20px;
     background-color: #33ef37;
@@ -75,6 +75,16 @@ span{
     letter-spacing: 3px;
     border: none;
 }
+
+/* #btnRecuperarUltimo{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #33ef37;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+} */
 
 .title_2{
     color: white;

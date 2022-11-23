@@ -95,3 +95,5 @@ function calcular() {
         resultadosFinales6Element.innerHTML = ""
         calcular();
     });
+
+    // BOTÓN PARA BORRAR LOS CAMPOS DEL FORMULARIO: agregarle además que desde el script me borre los datos de storage - Al parecer no es necesario porque como yo elegí sobreescribir los datos del formulario cada vez que se carguen y guarde el último, al resetear el formulario sobreescribe lo anterior y los bora
