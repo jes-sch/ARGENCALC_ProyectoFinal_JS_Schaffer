@@ -7,6 +7,10 @@
 body{
     background-image: linear-gradient(to left bottom, #50ee1c, #dec000, #ff7d0e, #ff3181, #f349db);
     background-repeat: no-repeat;
+    /* width: 100vh; */
+}
+
+main{
     width: 100vh;
 }
 
@@ -14,6 +18,7 @@ h1{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
     color: #33ef37;
     letter-spacing: 9px;
     text-shadow: 4px 3px 3px white;
@@ -21,9 +26,40 @@ h1{
     font-weight: 200;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
+    text-align: center;
     text-transform: uppercase;
     display: inline-block;
 }
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+} @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: 0.3em;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: 0.3em;
+      opacity: 1;
+    }
+  }
 
 h2{
     margin-left: 20px;
@@ -81,6 +117,11 @@ span{
     color: #33ef37;
     text-shadow: 3px 3px 3px white;
 }
+
+/* #formulario_principal{
+    display: flex;
+    align-items: center;
+} */
 
 .form-label{
     margin-left: 20px;
@@ -172,8 +213,6 @@ span{
     }
 }
 
-
-
 /* #btnRecuperarUltimo{
     margin-top: 20px;
     margin-left: 20px;
@@ -245,7 +284,7 @@ img{
 }
 
 footer{
-margin: 30px;
+    margin: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     text-align: center;
