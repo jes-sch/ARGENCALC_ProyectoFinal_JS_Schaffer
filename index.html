@@ -16,39 +16,39 @@
 <body>
 
     <header>
-        <h1>CALCUARGENTA</h1><br><br>
+        <h1>CALCUARGENTA</h1><br>
         <h2>Proyecto Final | Jesica Schäffer</h2>
-        <br><br><br>
+        <br><br>
     </header>
     
     <main>
-        <h2>¿Me coviene pagar <span>al contado</span> (1 pago) o <span>en cuotas</span>?</h2><br>
-        <h2>Calculemos qué te conviene:</h2><br><br>
+        <h2>¿Me coviene pagar <span>al contado</span> (1 pago) o <span>en cuotas</span>?</h2><br><br>
+        <h3><span class="span2">Calculemos qué te conviene:</span></h3><br><br>
 
 <!-- FORMULARIO PARA EL INGRESO DE DATOS inicio -->
         <form class="row g-3">
 
-            <div class="col-7">
+            <div class="col-12">
                 <label for="inputPrecioContado" class="form-label">Precio Total al contado:</label>
                 <input type="number" class="form-control" id="inputPrecioContado" placeholder="1000">
             </div>
 
-            <div class="col-7">
+            <div class="col-12">
                 <label for="inputPrecioCuotas" class="form-label">Precio Total en cuotas:</label>
                 <input type="number" class="form-control" id="inputPrecioCuotas" placeholder="1000">
             </div>
 
-            <div class="col-7">
+            <div class="col-12">
                 <label for="inputValorInflacion" class="form-label">Inflación Mensual estimada (6.3% Octubre INDEC). Podés ingresar la sugerida:</label>
                 <input type="number" class="form-control" id="inputValorInflacion" placeholder="6,3" value="6.3">
             </div>
 
-            <div class="col-7">
+            <div class="col-12">
                 <label for="inputCantidadCuotas" class="form-label">Cantidad de cuotas:</label>
                 <input type="number" class="form-control" id="inputCantidadCuotas" placeholder="3">
             </div>
 
-            <div class="col-7">
+            <div class="col-12">
                 <button type="button" class="btn btn-primary" id="btnCalcular" data-bs-toggle="modal" data-bs-target="#exampleModal">CALCULAR</button>
             </div>
 

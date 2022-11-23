@@ -7,13 +7,15 @@
 body{
     background-image: linear-gradient(to left bottom, #50ee1c, #dec000, #ff7d0e, #ff3181, #f349db);
     background-repeat: no-repeat;
-    
+    width: 100vh;
 }
 
 h1{
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
     color: #33ef37;
+    letter-spacing: 9px;
     text-shadow: 4px 3px 3px white;
     font-size: 50px;
     font-weight: 200;
@@ -27,12 +29,52 @@ h2{
     margin-left: 20px;
     margin-right: 20px;
     color: white;
+    letter-spacing: 4px;
     font-size: 25px;
     font-weight: 100;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
     text-transform: uppercase;
     display: inline-block;
+}
+
+h3{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    text-shadow: #ff7d0e;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+
+} .span2{
+    color: white;
+    text-shadow: 3px 3px 3px #f349db;
+    letter-spacing: 4px;
+}
+
+h3::after{
+    content: "";
+    position: absolute;
+
+    background-color: #f349db;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+h3:is(:hover, :focus)::after{
+    opacity: 1;
+    transform: translateY(8px);
 }
 
 span{
@@ -59,11 +101,38 @@ span{
 #btnCalcular{
     margin-top: 20px;
     margin-left: 20px;
-    background-color: #33ef37;
+    background-color: #50ee1c;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 3px;
     border: none;
+    position: relative;
+    border-radius: 8px;
+} #btnCalcular::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: white;
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(10px);
+    animation: glowing 20s linear infinite;
+
+    @keyframes glowing {
+        0%{
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
 }
 
 #boton_reset{
@@ -74,7 +143,36 @@ span{
     font-weight: bolder;
     letter-spacing: 3px;
     border: none;
+    position: relative;
+    border-radius: 8px;
+} #boton_reset::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: white;
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(10px);
+    animation: glowing 20s linear infinite;
+
+    @keyframes glowing {
+        0%{
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
 }
+
+
 
 /* #btnRecuperarUltimo{
     margin-top: 20px;
