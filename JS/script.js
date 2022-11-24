@@ -8,6 +8,17 @@ resultadosFinales6Element = document.getElementById("ResultadosFinales6"),
 btnRecuperarUltimo = document.getElementById("btnCalcular"),
 inputPrecioContado = document.getElementById("inputPrecioContado");
 
+const modal = () => {
+    let exampleModal = document.getElementById("exampleModal");
+    btnCalcular.addEventListener("click", () => {
+    exampleModal.classList.add("show");
+    })
+    const cerrar = document.getElementById("close");
+    cerrar.addEventListener("click", () => {
+    exampleModal.classList.remove("show");
+    })
+}
+
 function calcular() {
 
     let precioContado = document.getElementById("inputPrecioContado").value;
@@ -59,7 +70,7 @@ function calcular() {
     resultadosFinales5Element.innerHTML = "Monto de cada cuota: " + (precioContado / cantidadCuotas).toFixed(2);
     resultadosFinales6Element.innerHTML = "<h5>Cuotas ajustadas por la inflación acumulada mes a mes:</h5>"
     for (let i = 0; i < resultadosFinales.cuotas.length; i++) {
-        resultadosFinales6Element.innerHTML += `<br> Cuota N° ${i + 1} : $ ${resultadosFinales.cuotas[i].toFixed(2)}`;
+    resultadosFinales6Element.innerHTML += `<br> Cuota N° ${i + 1} : $ ${resultadosFinales.cuotas[i].toFixed(2)}`;
     }
 
     // VALIDACIÓN:
@@ -70,25 +81,15 @@ function calcular() {
             icon: "warning",
             title: 'Oops...',
             text: "Debés cargar todos los datos para poder CALCULAR los resultados"
-          })
+        })
 
-        } else {
-
-            const modal = () => {
-                let exampleModal = document.getElementById("exampleModal");
-                btnCalcular.addEventListener("click", () => {
-                    exampleModal.classList.add("show");
-                });
-                const cerrar = document.getElementById("close");
-                cerrar.addEventListener("click", () => {
-                    exampleModal.classList.remove("show");
-                });
-            };
-
-            guardarEnStorage("precioContado", precioContado);
-            guardarEnStorage("precioCuotas", precioCuotas);
-            guardarEnStorage("inflacion", inflacion);
-            guardarEnStorage("cantidadCuotas", cantidadCuotas);
+    } else {
+        
+        modal();
+        guardarEnStorage("precioContado", precioContado);
+        guardarEnStorage("precioCuotas", precioCuotas);
+        guardarEnStorage("inflacion", inflacion);
+        guardarEnStorage("cantidadCuotas", cantidadCuotas);
         }
 
 }
@@ -112,5 +113,3 @@ function calcular() {
         resultadosFinales6Element.innerHTML = ""
         calcular();
     });
-
-    // BOTÓN PARA BORRAR LOS CAMPOS DEL FORMULARIO: agregarle además que desde el script me borre los datos de storage - Al parecer no es necesario porque como yo elegí sobreescribir los datos del formulario cada vez que se carguen y guarde el último, al resetear el formulario sobreescribe lo anterior y los bora

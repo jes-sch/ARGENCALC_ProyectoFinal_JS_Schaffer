@@ -223,10 +223,6 @@ span{
     font-style: oblique;
 }
 
-#exampleModal{
-    opacity: 0.9;
-}
-
 #ResultadosFinales1{
     color: #FF2FEF;
     text-decoration: underline solid 2px;
@@ -250,7 +246,23 @@ span{
     border: none;
 }
 
+.modal{
+    display: flex;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
 .show{
+    pointer-events: auto;
     opacity: 1;
 }
 
