@@ -65,10 +65,15 @@ function calcular() {
     // VALIDACIÓN:
 
     if (precioContado == "" || precioCuotas == "" || inflacion == "" || cantidadCuotas == "") {
-        alert("Debés cargar todos los datos para poder CALCULAR los resultados");
+
+        Swal.fire({
+            icon: "warning",
+            title: 'Oops...',
+            text: "Debés cargar todos los datos para poder CALCULAR los resultados"
+          })
+
         } else {
-        
-        guardarEnStorage("precioContado", precioContado);
+                guardarEnStorage("precioContado", precioContado);
         guardarEnStorage("precioCuotas", precioCuotas);
         guardarEnStorage("inflacion", inflacion);
         guardarEnStorage("cantidadCuotas", cantidadCuotas);
