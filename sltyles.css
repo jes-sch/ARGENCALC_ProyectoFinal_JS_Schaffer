@@ -290,3 +290,15 @@ footer{
     text-align: center;
     font-size: 20px;
 }
+
+.subir {
+    height: 25px;
+    width: 20px;
+    color: white !important;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 7px 5px 5px #FF2FEF;
+}
