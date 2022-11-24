@@ -33,33 +33,33 @@ h1{
 
 .tracking-in-contract {
 	-webkit-animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 } @-webkit-keyframes tracking-in-contract {
     0% {
-      letter-spacing: 1.5em;
-      opacity: 0;
+    letter-spacing: 1.5em;
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      letter-spacing: 0.3em;
-      opacity: 1;
+    letter-spacing: 0.3em;
+    opacity: 1;
     }
-  }
-  @keyframes tracking-in-contract {
+}
+@keyframes tracking-in-contract {
     0% {
-      letter-spacing: 1.5em;
-      opacity: 0;
+    letter-spacing: 1.5em;
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      letter-spacing: 0.3em;
-      opacity: 1;
+    letter-spacing: 0.3em;
+    opacity: 1;
     }
-  }
+}
 
 h2{
     margin-left: 20px;
@@ -118,11 +118,6 @@ span{
     text-shadow: 3px 3px 3px white;
 }
 
-/* #formulario_principal{
-    display: flex;
-    align-items: center;
-} */
-
 .form-label{
     margin-left: 20px;
     margin-right: 20px;
@@ -165,13 +160,13 @@ span{
 
     @keyframes glowing {
         0%{
-            background-position: 0 0;
+        background-position: 0 0;
         }
         50%{
-            background-position: 400% 0;
+        background-position: 400% 0;
         }
         100%{
-            background-position: 0 0;
+        background-position: 0 0;
         }
     }
 }
@@ -202,26 +197,16 @@ span{
 
     @keyframes glowing {
         0%{
-            background-position: 0 0;
+        background-position: 0 0;
         }
         50%{
-            background-position: 400% 0;
+        background-position: 400% 0;
         }
         100%{
-            background-position: 0 0;
+        background-position: 0 0;
         }
     }
 }
-
-/* #btnRecuperarUltimo{
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #33ef37;
-    text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    border: none;
-} */
 
 .title_2{
     color: white;
@@ -267,8 +252,10 @@ span{
 
 .modal-title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #33ef37;
+    color: #ff7d0e;
     text-shadow: 3px 3px 3px grey;
+    font-size: 2em;
+    letter-spacing: 5px;
 }
 
 .modal-body{
