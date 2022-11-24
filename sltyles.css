@@ -250,6 +250,10 @@ span{
     border: none;
 }
 
+.show{
+    opacity: 1;
+}
+
 .modal-title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ff7d0e;

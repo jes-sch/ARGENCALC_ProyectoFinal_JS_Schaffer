@@ -73,10 +73,22 @@ function calcular() {
           })
 
         } else {
-                guardarEnStorage("precioContado", precioContado);
-        guardarEnStorage("precioCuotas", precioCuotas);
-        guardarEnStorage("inflacion", inflacion);
-        guardarEnStorage("cantidadCuotas", cantidadCuotas);
+
+            const modal = () => {
+                let exampleModal = document.getElementById("exampleModal");
+                btnCalcular.addEventListener("click", () => {
+                    exampleModal.classList.add("show");
+                });
+                const cerrar = document.getElementById("close");
+                cerrar.addEventListener("click", () => {
+                    exampleModal.classList.remove("show");
+                });
+            };
+
+            guardarEnStorage("precioContado", precioContado);
+            guardarEnStorage("precioCuotas", precioCuotas);
+            guardarEnStorage("inflacion", inflacion);
+            guardarEnStorage("cantidadCuotas", cantidadCuotas);
         }
 
 }
