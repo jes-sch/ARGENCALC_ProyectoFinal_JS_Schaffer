@@ -17,6 +17,10 @@ const modal = () => {
     cerrar.addEventListener("click", () => {
     exampleModal.classList.remove("show");
     })
+    const cerrarCruz = document.getElementById("cerrarCruz");
+    cerrarCruz.addEventListener("click", () => {
+    exampleModal.classList.remove("show");
+    })
 }
 
 function calcular() {
