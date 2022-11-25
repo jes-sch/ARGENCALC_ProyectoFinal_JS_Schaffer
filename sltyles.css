@@ -217,7 +217,7 @@ span{
     margin-left: 20px;
     margin-right: 20px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
@@ -230,7 +230,7 @@ span{
 }
 
 #ResultadosFinales6{
-    margin-top: 20px;
+    margin-top: 10px;
     color: #FF2FEF;
     text-decoration: underline solid 2px;
     text-transform: uppercase;
@@ -249,15 +249,14 @@ span{
 .modal{
     display: flex;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     pointer-events: none;
     opacity: 0;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: max-content;
     width: 100vw;
     transition: opacity 0.3s ease;
 }
