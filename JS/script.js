@@ -86,7 +86,7 @@ function calcular() {
             imageWidth: 450,
             imageHeigth: 200,
             imageAlt: "Pepe Argento haciendo caras",
-            width: 600,
+            width: 500,
             color: "#1124f2",
             background: "#33ef37",
             confirmButtonText: "OK",
