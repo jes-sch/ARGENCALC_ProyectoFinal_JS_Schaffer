@@ -48,7 +48,7 @@ function calcular() {
     let mejorOpcion;
 
     // Cambio la esctructura condicional If... Else que tenía en mi proyecto, por un Operador Avanzado, en este caso el OPERADOR TERNARIO:
-    
+
     precioContado>precioCuotasAjustado ? mejorOpcion = "Te conviene comprar EN CUOTAS" : mejorOpcion = "Te conviene comprar AL CONTADO";
 
     // Creo mi OBJETO resultadosFinales:
@@ -80,9 +80,17 @@ function calcular() {
     if (precioContado == "" || precioCuotas == "" || inflacion == "" || cantidadCuotas == "") {
 
         Swal.fire({
-            icon: "warning",
-            title: 'Oops...',
-            text: "Debés cargar todos los datos para poder CALCULAR los resultados"
+            title: "Ayy, no!",
+            text: "Tenés que cargar todos los datos para poder CALCULAR los resultados ;)",
+            imageUrl: "https://www.losandes.com.ar/resizer/z3rmrT-vh1VF9hNjOzJ0-3cwS4E=/980x640/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/L4UFWTYTTZEHZBMPAVJLGKBBYA.png",
+            imageWidth: 450,
+            imageHeigth: 200,
+            imageAlt: "Pepe Argento haciendo caras",
+            width: 600,
+            color: "#1124f2",
+            background: "#33ef37",
+            confirmButtonText: "OK",
+            confirmButtonColor: "#1124f2",
         })
 
     } else {
