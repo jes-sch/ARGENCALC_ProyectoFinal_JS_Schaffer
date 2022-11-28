@@ -47,11 +47,9 @@ function calcular() {
 
     let mejorOpcion;
 
-    if (precioContado>precioCuotasAjustado) {
-        mejorOpcion = "Te conviene comprar EN CUOTAS";
-    }else{
-        mejorOpcion = "Te conviene comprar AL CONTADO";
-    }
+    // Cambio la esctructura condicional If... Else que tenía en mi proyecto, por un Operador Avanzado, en este caso el OPERADOR TERNARIO:
+    
+    precioContado>precioCuotasAjustado ? mejorOpcion = "Te conviene comprar EN CUOTAS" : mejorOpcion = "Te conviene comprar AL CONTADO";
 
     // Creo mi OBJETO resultadosFinales:
 
