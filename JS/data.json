@@ -1,0 +1,9 @@
+{
+    "mejorOpcion": "mejorOpcion",
+    "cuotaAjustadaHoy": "precioCuotasAjustado",
+    "precioContado": "precioContado",
+    "precioCuotas": "precioCuotas",
+    "valorCadaCuota": "precioContado / cantidadCuotas",
+    "inflacion": "inflacion",
+    "cuotas": "arrayCuotas"
+}

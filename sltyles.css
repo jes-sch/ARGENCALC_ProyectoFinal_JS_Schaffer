@@ -7,7 +7,6 @@
 body{
     background-image: linear-gradient(to left bottom, #50ee1c, #dec000, #ff7d0e, #ff3181, #f349db);
     background-repeat: no-repeat;
-    /* width: 100vh; */
 }
 
 main{
