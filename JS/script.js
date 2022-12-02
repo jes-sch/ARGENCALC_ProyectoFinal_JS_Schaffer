@@ -53,7 +53,7 @@ function calcular() {
 
     // Creo mi OBJETO resultadosFinales:
 
-/*     const resultadosFinales = {
+    const resultadosFinales = {
         mejorOpcion: mejorOpcion,
         cuotaAjustadaHoy: precioCuotasAjustado,
         precioContado: precioContado,
@@ -61,7 +61,7 @@ function calcular() {
         valorCadaCuota: precioContado / cantidadCuotas,
         inflacion: inflacion,
         cuotas: arrayCuotas,
-    }; */
+    };
 
     // MODAL: muestro los resultadosFinales mediante un modal:
 
@@ -118,18 +118,8 @@ function calcular() {
     //return sessionStorage.getItem(key); ESTA LÍNEA LA COMENTO PORQUE NO QUIERO RECUPERAR DEL SESSION
 }
 
-/*     btnCalcular.addEventListener('click', (e) => {
+    btnCalcular.addEventListener('click', (e) => {
         e.preventDefault();
         resultadosFinales6Element.innerHTML = ""
         calcular();
-    }); */
-
-
-    btnCalcular.addEventListener('click', () => {
-        fetch('./JS/data.json') // Utilizo un archivo JSON dentro de mi proyecto para recuperarlo de manera asíncrona
-            .then((response) => response.json())
-            .then((data) => {
-                resultadosFinales6Element.innerHTML = ""('resultadosFinales',JSON.stringify(data));;
-            })
-        calcular();
-    })
+    });
