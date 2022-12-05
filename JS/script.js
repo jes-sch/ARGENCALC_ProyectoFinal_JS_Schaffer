@@ -9,18 +9,16 @@ inputValorInflacion = document.getElementById("inputValorInflacion"),
 btnRecuperarUltimo = document.getElementById("btnCalcular"),
 inputPrecioContado = document.getElementById("inputPrecioContado");
 
-document.onreadystatechange = async function()
-{
-    if (document.readyState === 'complete')
-    {
-        let inflacionData = await fetch ('./JS/data.json')
+document.onreadystatechange = async function(){
+
+    if (document.readyState === 'complete'){
+        let inflacionData = await fetch ('./JS/data.json') // archivo json dentro de mi proyecto que me traigo de manera asíncrona
         inputValorInflacion.value = ObtenerUltimo(await inflacionData.json());
     }
 };
 
 function ObtenerUltimo(myArray){
     let ordenado = myArray.sort((a,b) => a.d > b.d )
-
     return ordenado.at(-1).v;
 }
 
